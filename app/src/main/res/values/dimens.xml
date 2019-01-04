@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="item_large_text">18sp</dimen>
+    <dimen name="item_normal_text">14sp</dimen>
+    <dimen name="item_small_text">12sp</dimen>
+    <dimen name="book_item_height">100dp</dimen>
+    <dimen name="book_image_height">80dp</dimen>
+    <dimen name="book_image_width">60dp</dimen>
+    <dimen name="book_image_margin">16dp</dimen>
+    <dimen name="book_item_margin">5dp</dimen>
+</resources>

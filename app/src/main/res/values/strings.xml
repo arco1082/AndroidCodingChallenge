@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AndroidCodingChallenge</string>
+
+    <string name="main_title">DE JSON Test</string>
+
+    <string name="empty_results">No results</string>
+    <string name="retry">Retry</string>
+    <string name="network_error">Network Unavailable</string>
+    <string name="api_error">API is not reachable</string>
+
+    <string name="endpoint">http://de-coding-test.s3.amazonaws.com/</string>
+</resources>

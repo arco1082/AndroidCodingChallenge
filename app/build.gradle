@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion project.VERSION_COMPILE_SDK
+
+    defaultConfig {
+        applicationId "com.acontreras.androidcodingchallenge"
+        minSdkVersion project.VERSION_MIN_SDK
+        targetSdkVersion project.VERSION_TARGET_SDK
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+
+    //Android tools
+    implementation project.DEPENDENCY_RECYCLER_VIEW_V7
+    implementation project.DEPENDENCY_ANDROID_DESIGN
+    implementation project.DEPENDENCY_APPCOMPAT_V7
+    implementation project.DEPENDENCY_SUPPORT_V4
+    implementation project.DEPENDENCY_GSON
+
+    implementation project.DEPENDENCY_CONSTRAINT_LAYOUT
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //Retrofit
+    implementation project.DEPENDENCY_RETROFIT
+    implementation project.DEPENDENCY_RETROFIT_CONVERTER
+    implementation project.DEPENDENCY_RETROFIT_ADAPTER
+    implementation project.DEPENDENCY_OKHTTP
+
+
+    //Image Downloading
+    implementation project.DEPENDENCY_PICASSO
+
+
+}
